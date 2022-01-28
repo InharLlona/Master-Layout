@@ -1,0 +1,304 @@
+.mainContainer {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  gap: 10px;
+}
+.mainContainer .container-1 {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+.mainContainer .container-1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.mainContainer .container-1 .boxbase-color-1 {
+  background-color: #61E8E1;
+  flex-grow: 2;
+}
+.mainContainer .container-1 .boxlighten-1-1 {
+  background-color: #8eeee9;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxdarken-1-1 {
+  background-color: #34e2d9;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxlighten-1-2 {
+  background-color: #baf5f2;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxdarken-1-2 {
+  background-color: #1dc6bd;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxlighten-1-3 {
+  background-color: #e7fbfa;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxdarken-1-3 {
+  background-color: #169a93;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxlighten-1-4 {
+  background-color: white;
+  flex-grow: 1;
+}
+.mainContainer .container-1 .boxdarken-1-4 {
+  background-color: #106d68;
+  flex-grow: 1;
+}
+.mainContainer .container-1 span {
+  color: rgb(184, 166, 134);
+  font-style: italic;
+  font-size: large;
+}
+.mainContainer .container-1 div {
+  border-radius: 7px;
+  box-shadow: rgba(40, 42, 43, 0.35) 0px 5px 15px;
+}
+.mainContainer .container-2 {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+.mainContainer .container-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.mainContainer .container-2 .boxbase-color-2 {
+  background-color: #F25757;
+  flex-grow: 2;
+}
+.mainContainer .container-2 .boxlighten-2-1 {
+  background-color: #f68686;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxdarken-2-1 {
+  background-color: #ee2828;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxlighten-2-2 {
+  background-color: #f9b6b6;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxdarken-2-2 {
+  background-color: #d31010;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxlighten-2-3 {
+  background-color: #fde5e5;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxdarken-2-3 {
+  background-color: #a30d0d;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxlighten-2-4 {
+  background-color: white;
+  flex-grow: 1;
+}
+.mainContainer .container-2 .boxdarken-2-4 {
+  background-color: #740909;
+  flex-grow: 1;
+}
+.mainContainer .container-2 span {
+  color: rgb(184, 166, 134);
+  font-style: italic;
+  font-size: large;
+}
+.mainContainer .container-2 div {
+  border-radius: 7px;
+  box-shadow: rgba(40, 42, 43, 0.35) 0px 5px 15px;
+}
+.mainContainer .container-3 {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+.mainContainer .container-3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.mainContainer .container-3 .boxbase-color-3 {
+  background-color: #F2E863;
+  flex-grow: 2;
+}
+.mainContainer .container-3 .boxlighten-3-1 {
+  background-color: #f6ef92;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxdarken-3-1 {
+  background-color: #eee134;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxlighten-3-2 {
+  background-color: #faf6c1;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxdarken-3-2 {
+  background-color: #ddce12;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxlighten-3-3 {
+  background-color: #fefdf0;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxdarken-3-3 {
+  background-color: #aea20e;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxlighten-3-4 {
+  background-color: white;
+  flex-grow: 1;
+}
+.mainContainer .container-3 .boxdarken-3-4 {
+  background-color: #7e760b;
+  flex-grow: 1;
+}
+.mainContainer .container-3 span {
+  color: rgb(184, 166, 134);
+  font-style: italic;
+  font-size: large;
+}
+.mainContainer .container-3 div {
+  border-radius: 7px;
+  box-shadow: rgba(40, 42, 43, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 535px) {
+  .TotalContainer {
+    margin-top: 20px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    max-width: 200px;
+  }
+
+  .TitleBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .TitleBox span {
+    font-size: large;
+  }
+
+  .UserButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .UserButtons div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #F2CD60;
+  }
+  .UserButtons :hover {
+    background-color: #d4b452;
+  }
+}
+@media only screen and (min-width: 536px) {
+  .TotalContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .TitleBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .TitleBox span {
+    font-size: x-large;
+  }
+
+  .UserButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .UserButtons div {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #F2CD60;
+  }
+  .UserButtons :hover {
+    background-color: #d4b452;
+  }
+}
+.TotalContainer2 {
+  margin-top: 20px;
+  box-sizing: content-box;
+  display: grid;
+  width: 350px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 350px;
+  border: 2px solid #b6b2b2;
+}
+.TotalContainer2 .ImgBox {
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+}
+.TotalContainer2 .ImgBox .Im {
+  width: 100%;
+  height: 100%;
+}
+.TotalContainer2 div {
+  padding: 10px;
+}
+.TotalContainer2 .PublishmentBox {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.TotalContainer2 .PublishmentBox .PublishmetTitleBox {
+  padding: 3px;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+.TotalContainer2 .PublishmentBox .PublishmentDateBox {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+}
+.TotalContainer2 .PublishmentBox .PublishmentDateBox span {
+  color: #bbb8b8;
+  font-size: smaller;
+  font-style: italic;
+}
+.TotalContainer2 .MoreInfoBoxConatiner :hover {
+  background-color: #6aad06;
+}
+.TotalContainer2 .MoreInfoBoxConatiner div {
+  background-color: #87db09;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.TotalContainer2 .MoreInfoBoxConatiner div span {
+  color: #fcf7f7;
+}
+/*# sourceMappingURL=index.32a6e1c2.css.map */

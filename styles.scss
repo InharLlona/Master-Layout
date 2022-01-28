@@ -1,0 +1,229 @@
+$MyColor-1: #61E8E1;
+$MyColor-2: #F25757;
+$MyColor-3: #F2E863;
+.mainContainer{
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    gap:10px;
+    .container-1{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        .boxbase-color-1{
+            background-color: $MyColor-1;
+            flex-grow: 2;
+        }
+
+        @for $i from 1 through 4{
+            .boxlighten-1-#{$i}{
+                background-color: lighten($MyColor-1, ($i*10));
+                flex-grow: 1;
+            }
+            .boxdarken-1-#{$i}{
+                background-color: darken($MyColor-1, ($i*10));
+                flex-grow: 1;
+            }
+        }
+        @import "styleTemaB";
+    }
+    .container-2{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            }
+        .boxbase-color-2{
+            background-color: $MyColor-2;
+            flex-grow: 2;
+        }
+    
+        @for $i from 1 through 4{
+            .boxlighten-2-#{$i}{
+                background-color: lighten($MyColor-2, ($i*10));
+                flex-grow: 1;
+            }
+            .boxdarken-2-#{$i}{
+                background-color: darken($MyColor-2, ($i*10));
+                flex-grow: 1;
+            }
+        }
+        @import "styleTemaB";
+    }
+    .container-3{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            }
+        .boxbase-color-3{
+            background-color: $MyColor-3;
+            flex-grow: 2;
+        }
+    
+        @for $i from 1 through 4{
+            .boxlighten-3-#{$i}{
+                background-color: lighten($MyColor-3, ($i*10));
+                flex-grow: 1;
+            }
+            .boxdarken-3-#{$i}{
+                background-color: darken($MyColor-3, ($i*10));
+                flex-grow: 1;
+            }
+        }
+        @import "styleTemaB"; 
+    }  
+    
+}
+//////////////////EJERCICIO3
+//////////////////
+//////////////////
+@media only screen and (max-width: 535px) {
+    .TotalContainer{
+        margin-top: 20px;
+        border: 4px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        padding:10px;
+        max-width: 200px;
+    }
+    .TitleBox{
+        display:flex;
+        flex-direction: row;
+        span{
+            font-size: large;
+        }
+    }
+    .UserButtons{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        div{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #F2CD60;
+            
+        }
+        :hover{
+            background-color: #d4b452;
+        }
+    }
+}
+
+@media only screen and (min-width: 536px) {
+    .TotalContainer{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        width:100%;
+    }
+    .TitleBox{
+        display:flex;
+        flex-direction: row;
+        span{
+            font-size: x-large;
+        }
+    }
+    .UserButtons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 10px;
+            background-color: #F2CD60;
+            
+        }
+        :hover{
+            background-color: #d4b452;
+        }
+    }
+}
+//////////////////EJERCICIO4
+//////////////////
+//////////////////
+
+.TotalContainer2{
+    margin-top: 20px;
+    box-sizing: content-box;
+    display: grid;
+    width: 350px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 350px;
+    border:2px solid rgb(182, 178, 178);
+    .ImgBox{
+        padding:0px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        .Im{
+           width: 100%;
+           height: 100%;
+           //grid-column: 1 / 2;
+           //grid-row: 1 / 2;
+        }
+    }
+    div{
+        padding: 10px;
+    }
+    .PublishmentBox{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        .PublishmetTitleBox{
+            padding:3px;
+            display:grid;
+            justify-content:end;
+            align-items: center;
+        }
+        .PublishmentDateBox{
+            display:grid;
+            justify-content:start;
+            align-items: center;
+            span{
+                color: rgb(187, 184, 184);
+                font-size:smaller;
+                font-style: italic;
+            }
+        }
+    }
+    .MoreInfoBoxConatiner{
+        :hover{
+            background-color: rgb(106, 173, 6);
+        }
+        div{
+            background-color: rgb(135, 219, 9);
+            display: grid;
+            justify-content:center;
+            align-items: center;
+            span{
+                color: rgb(252, 247, 247);
+            }
+        }
+    }
+}
